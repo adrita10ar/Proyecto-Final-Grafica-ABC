@@ -1,0 +1,57 @@
+/* INSTITUCIONAL */
+
+.imagenFondo {
+    background-image: url("../img/fondoinstitucional.jpg");
+    background-size: cover;
+    position: relative;
+    height: calc(90vh - 90px);
+
+    h1 {
+        padding: 20px;
+    }
+}
+
+.cajaInstitucional {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    height: 500x;
+    width:500px;
+    border: 15px solid transparent;
+    border-image: linear-gradient(-45deg, #e81cff 20%, #40c9ff 100%);
+    box-shadow: 0px 0px 15px #40c9ff;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    background-color: #fff;
+    text-align: center;
+
+    p {
+        width: auto;
+    }
+}
+
+.unicos h3 {
+    color: $color-titulos;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 50px;
+    text-decoration: underline;
+}
+
+.cardInstitucional {
+    margin: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0px 0px 15px #088ec3;
+
+    p {
+        color: $color-titulos;
+    }
+}
+
+.cardText {
+    margin-top: 10px;
+    color: $color-titulos;
+}

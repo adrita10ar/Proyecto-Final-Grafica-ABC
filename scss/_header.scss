@@ -1,0 +1,71 @@
+/* Header */
+
+header {
+    border-bottom: 2px solid rgb(89, 0, 89);
+    ;
+    text-align: center;
+    padding: 0px 0px;
+
+    .logo {
+        width: 170px;
+    }
+
+    .menuNav a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        color: rgb(89, 0, 89);
+        padding: 0;
+
+        &:hover {
+            background-color: rgb(89, 0, 89);
+            border-radius: 4PX;
+            color: white;
+        }
+    }
+}
+
+
+/* Body */
+
+.carousel-inner p {
+    font-size: 1.2rem;
+
+    carousel-item {
+        transition: transform 2s ease-in-out;
+    }
+}
+
+.carousel-inner h4 {
+    font-size: 170%;
+    color: solid white;
+}
+
+/* Main */
+
+main {
+    margin: 5px;
+    padding: 5px;
+
+    h1 {
+        color: $color-titulos;
+        @include extra-titulos;
+        font-size: 120%;
+        padding-bottom: 15px;
+    }
+
+    h2 {
+        @include extra-titulos;
+        color: $color-titulos;
+        font-size: 100%;
+        margin: 20px 0px;
+    }
+
+    h3 {
+        color: $color-titulos;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        font-size: 120%;
+    }
+}

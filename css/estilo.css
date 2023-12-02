@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*MIXIN SIN PARAMETROS*/
+/* Header */
+header {
+  border-bottom: 2px solid rgb(89, 0, 89);
+  text-align: center;
+  padding: 0px 0px;
+}
+header .logo {
+  width: 170px;
+}
+header .menuNav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: rgb(89, 0, 89);
+  padding: 0;
+}
+header .menuNav a:hover {
+  background-color: rgb(89, 0, 89);
+  border-radius: 4PX;
+  color: white;
+}
+
+/* Body */
+.carousel-inner p {
+  font-size: 1.2rem;
+}
+.carousel-inner p carousel-item {
+  transition: transform 2s ease-in-out;
+}
+
+.carousel-inner h4 {
+  font-size: 170%;
+  color: solid white;
+}
+
+/* Main */
+main {
+  margin: 5px;
+  padding: 5px;
+}
+main h1 {
+  color: rgb(86, 0, 86);
+  text-align: center;
+  text-decoration: underline;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 120%;
+  padding-bottom: 15px;
+}
+main h2 {
+  text-align: center;
+  text-decoration: underline;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: rgb(86, 0, 86);
+  font-size: 100%;
+  margin: 20px 0px;
+}
+main h3 {
+  color: rgb(86, 0, 86);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 120%;
+}
+
+/* INSTITUCIONAL */
+.imagenFondo {
+  background-image: url("../img/fondoinstitucional.jpg");
+  background-size: cover;
+  position: relative;
+  height: calc(90vh - 90px);
+}
+.imagenFondo h1 {
+  padding: 20px;
+}
+
+.cajaInstitucional {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  height: 500x;
+  width: 500px;
+  border: 15px solid transparent;
+  border-image: linear-gradient(-45deg, #e81cff 20%, #40c9ff 100%);
+  box-shadow: 0px 0px 15px #40c9ff;
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  background-color: #fff;
+  text-align: center;
+}
+.cajaInstitucional p {
+  width: auto;
+}
+
+.unicos h3 {
+  color: rgb(86, 0, 86);
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 50px;
+  text-decoration: underline;
+}
+
+.cardInstitucional {
+  margin: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 15px;
+  box-shadow: 0px 0px 15px #088ec3;
+}
+.cardInstitucional p {
+  color: rgb(86, 0, 86);
+}
+
+.cardText {
+  margin-top: 10px;
+  color: rgb(86, 0, 86);
+}
+
+/* SERVICIOS */
+.row {
+  align-items: center;
+  justify-content: center;
+}
+.row .card {
+  display: block;
+  position: relative;
+  margin: 30px;
+  width: 285px;
+  height: 381px;
+  background-color: #f8f8f0;
+  gap: 12px;
+  border-radius: 8px;
+  text-align: center;
+}
+.row .card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 295px;
+  height: 396px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.row .card::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+.row .card:hover::after {
+  filter: blur(20px);
+}
+.row .card:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.servicosLista {
+  list-style: none;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 20px;
+}
+
+h3 {
+  padding: 30px 0px 15px 0px;
+}
+
+.servicios h3 {
+  font-weight: bold;
+  font-size: 120%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+h5 {
+  color: rgb(86, 0, 86);
+  font-size: 150%;
+}
+
+/* Portfolio */
+.imgPortfolio {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  display: block;
+  width: 100%;
+  height: 0%;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+.imgPortfolio:hover {
+  transform: scale(1.1);
+}
+
+.card-title {
+  padding: 10px;
+  text-align: center;
+  color: rgb(86, 0, 86);
+}
+
+.cardPortfolio {
+  margin: 15px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 15px #cc00ff;
+  overflow: hidden;
+  position: relative;
+}
+.cardPortfolio:hover {
+  transform: scale(1.1);
+}
+
+.cardPortfolio h3 {
+  color: rgb(86, 0, 86);
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 100%;
+}
+
+/* CONTACTO */
+.card-bodyContacto {
+  color: rgb(86, 0, 86);
+  box-shadow: 0px 0px 15px #cc00ff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 15px;
+  background-image: linear-gradient(45deg, #db4bff, #b3e9f4);
+}
+
+.cardContacto {
+  /* Formulario de Contacto */
+}
+.cardContacto #submit {
+  width: 40%;
+  margin: 10px;
+}
+.cardContacto #reset {
+  width: 40%;
+  margin: 10px;
+}
+.cardContacto label {
+  display: block;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 5px;
+  color: solid rgb(5, 5, 100);
+}
+.cardContacto input,
+.cardContacto textarea {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  border: 3x solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.cardContacto #formSubscribe {
+  margin-top: 20px;
+}
+.cardContacto .formTexto {
+  color: rgb(86, 0, 86);
+  text-align: center;
+  margin-top: 10px;
+}
+.cardContacto .contenedorBtn {
+  display: flex;
+  justify-content: center;
+}
+.cardContacto .btnFormulario {
+  background-color: rgb(89, 0, 89);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Iframe (Mapa) en Formulario de contacto*/
+iframe {
+  width: 100%;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+/* FOOTER */
+footer {
+  margin: 15px;
+  border-top: 1px solid rgb(89, 0, 89);
+  border-bottom: 1px solid rgb(89, 0, 89);
+  text-align: center;
+}
+
+.logoFooter {
+  width: 110px;
+  margin: 10px 10px 10px 10px;
+}
+
+.social-media {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+.social-media ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+.social-media li {
+  margin: 10px 10px 10px 10px;
+}
+.social-media a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.fa-instagram {
+  color: #e4405f;
+}
+
+.fa-youtube {
+  color: #cd201f;
+}
+
+.parrafoFooter {
+  font-size: 0.8rem;
+  margin: 35px 35px 35px 35px;
+  color: rgb(86, 0, 86);
+}
+
+/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,84 @@
+/* CONTACTO */
+
+.card-bodyContacto {
+    color: $color-titulos;
+    box-shadow: $color-sombra-cards;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    background-image: linear-gradient(45deg, #db4bff, #b3e9f4);
+}
+
+.cardContacto {
+
+    #submit {
+        width: 40%;
+        margin: 10px;
+
+    }
+
+    #reset {
+        width: 40%;
+        margin: 10px;
+
+    }
+
+
+    /* Formulario de Contacto */
+
+    label {
+        display: block;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-bottom: 5px;
+        color: solid rgb(5, 5, 100);
+    }
+
+    input,
+    textarea {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        border: 3x solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+
+    #formSubscribe {
+        margin-top: 20px;
+    }
+
+    .formTexto {
+        color: $color-titulos;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .contenedorBtn {
+        display: flex;
+        justify-content: center
+    }
+
+    .btnFormulario {
+        background-color: rgb(89, 0, 89);
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+}
+
+
+/* Iframe (Mapa) en Formulario de contacto*/
+
+iframe {
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 15px;
+}

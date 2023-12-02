@@ -1,0 +1,60 @@
+/* FOOTER */
+
+footer {
+    margin: 15px;
+    border-top: 1px solid rgb(89, 0, 89);
+    border-bottom: 1px solid rgb(89, 0, 89);
+    text-align: center;
+}
+
+.logoFooter {
+    width: 110px;
+    margin: 10px 10px 10px 10px;
+}
+
+.social-media {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 35px;
+    margin-right: 35px;
+
+    ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+    }
+
+    li {
+        margin: 10px 10px 10px 10px;
+    }
+
+    a {
+        color: #fff;
+        font-size: 1.5rem;
+        transition: color 0.3s ease;
+    }
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-twitter {
+    color: #1da1f2;
+}
+
+.fa-instagram {
+    color: #e4405f;
+}
+
+.fa-youtube {
+    color: #cd201f;
+}
+
+.parrafoFooter {
+    font-size: 0.8rem;
+    margin: 35px 35px 35px 35px;
+    color: $color-titulos;
+}
