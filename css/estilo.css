@@ -28,6 +28,10 @@ header .menuNav a:hover {
 }
 
 /* Body */
+main h1 {
+  display: none;
+}
+
 .carousel-inner p {
   font-size: 1.2rem;
 }
