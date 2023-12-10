@@ -35,13 +35,9 @@ main {
     }
   }
 
-.carousel-inner p {
-    font-size: 1.2rem;
-
-    carousel-item {
-        transition: transform 2s ease-in-out;
-    }
-}
+  .carousel-inner .carousel-item p {
+    transition: transform 2s ease-in-out;
+  }
 
 .carousel-inner h4 {
     font-size: 170%;

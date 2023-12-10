@@ -32,10 +32,7 @@ main h1 {
   display: none;
 }
 
-.carousel-inner p {
-  font-size: 1.2rem;
-}
-.carousel-inner p carousel-item {
+.carousel-inner .carousel-item p {
   transition: transform 2s ease-in-out;
 }
 
